@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Details - Spike</title>
+    <link rel="stylesheet" href="styles/details.css">
+    <style>
+.navi {
+    background-color: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navi .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navi .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navi .nav-links a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navi .nav-links a:hover,
+.navi .nav-links a.active {
+    color: blue;
+}
+
+.navi .search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .shoe-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .shoe-header img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .shoe-details {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .shoe-details h1 {
+            font-size: 2rem;
+            color: blue;
+        }
+
+        .shoe-details p {
+            font-size: 1rem;
+            margin: 10px 0;
+        }
+
+        .specifications {
+            margin: 20px 0;
+        }
+
+        .specifications h2 {
+            font-size: 1.5rem;
+            color: #555;
+        }
+
+        .specifications ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        .buy-now {
+            display: inline-block;
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .buy-now:hover {
+            background-color: rgb(226, 71, 9);
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .footer .social-links img {
+            width: 30px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .footer .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navi">
+            <div class="logo">
+                <a href="project.html">Spike</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="new.html" >New</a></li>
+                <li><a href="sneakers.html">Sneakers</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="specials.html">Spike Specials</a></li>
+                <li><a href="contact.html"class="active">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="shoe-header">
+            <div class="shoe-image">
+                <img src="sneaker1.jpg" alt="Spike Runner" style="max-width: 400px;">
+            </div>
+            <div class="shoe-details">
+                <h1>Spike Runner</h1>
+                <p>Designed for speed and agility, the Spike Runner is perfect for athletes looking for top performance and style.</p>
+                <p><strong>Price:</strong> ₹7299</p>
+                <a href="buy.html" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+
+        <div class="specifications">
+            <h2>Specifications:</h2>
+            <ul>
+                <li>Material: Lightweight Mesh</li>
+                <li>Outsole: Durable Rubber for Enhanced Grip</li>
+                <li>Cushioning: Advanced Foam Midsole</li>
+                <li>Weight: 250g</li>
+                <li>Color Options: Black, Red, Blue</li>
+            </ul>
+        </div>
+
+        <div class="particulars">
+            <h2>Particulars:</h2>
+            <p>The Spike Runner offers unparalleled comfort for long hours of wear, making it a versatile choice for both casual and professional settings. Its lightweight construction and enhanced grip make it suitable for various surfaces, from tracks to streets.</p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Spike. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

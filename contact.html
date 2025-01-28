@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+.navi {
+    background-color: #000;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navi .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navi .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navi .nav-links a {
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navi .nav-links a:hover,
+.navi .nav-links a.active {
+    color: blue;
+}
+
+.navi .search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    outline: none;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .team {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            justify-items: center;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .team-member img {
+            width: 100%;
+            height: auto;
+        }
+
+        .member-info {
+            padding: 1rem;
+        }
+
+        .member-name {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+
+        .member-title {
+            font-size: 1.2rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navi">
+            <div class="logo">
+                <a href="project.html">Spike</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="project.html">Home</a></li>
+                <li><a href="new.html" >New</a></li>
+                <li><a href="sneakers.html">Sneakers</a></li>
+                <li><a href="shoes.html">Shoes</a></li>
+                <li><a href="specials.html">Spike Specials</a></li>
+                <li><a href="contact.html"class="active">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+        </nav>
+        <h1>Contact Us</h1>
+        <h3>spike@corp.in or at 782648539</h3>
+        <p>We are here to help. Get in touch with us!</p>
+    </header>
+    <main>
+        <h2>Meet Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="kunal.jpg" alt="CEO">
+                <div class="member-info">
+                    <h3 class="member-name">Kunal V Kurundwadkar</h3>
+                    <p class="member-title">CEO & Co-Founder</p>
+                </div>
+            </div>
+            <div class="team-member">
+                <img src="sanath.jpg" alt="Head of Operations">
+                <div class="member-info">
+                    <h3 class="member-name">Sanath Hegde</h3>
+                    <p class="member-title">Head of Operations & Co-Founder</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sneakers Collection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
